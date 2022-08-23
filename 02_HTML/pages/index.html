@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h2>
+        Введите ваши данные
+    </h2>
+    <form action="https://fom.in.ua/echo" method="post">
+        <input type="email" name="user_email" placeholder="Введите ваш email" required>
+        <input type="password" name="user_password" placeholder="Придумайте пароль" required>
+        <input type="password" placeholder="Подтвердите пароль" required>
+        
+        <input type="submit" value="Регистрация">
+        <br>
+        <p>
+            Ваш пол
+        </p>
+        <span>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Мужчина</label>
+        </span>
+
+        <span>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Женщина</label>
+        </span>
+
+        <span>
+            <input type="radio" name="gender" id="shrimp" value="shrimp">
+            <label for="shrimp">Креветка</label>
+        </span>
+    </form>
+</body>
+</html>

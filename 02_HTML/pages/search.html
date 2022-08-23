@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoRia</title>
+</head>
+<body>
+    <form action="https://fom.in.ua/echo" method="post">
+        <h2>
+            Задайте запрос на поиск автомобиля
+        </h2>
+        <p>
+            Выберите тип кузова автомобиля:
+        </p>
+        <select name="body">
+            <option>Седан</option>
+            <option>Универсал</option>
+            <option>Хетчбек</option>
+            <option>Минивен</option>
+            <option>Внедорожник</option>
+            <option>Купе</option>
+            <option>Кабриолет</option>
+            <option>Пикап</option>
+            <option>Лимузин</option>
+        </select>
+        <br>
+        <p>
+            Выберите марку автомобиля:
+        </p>
+        <select name="mark">
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Lexus</option>
+            <option>Mitsubishi</option>
+            <option>Tesla</option>
+            <option>Toyota</option>
+            <option>Ford</option>
+            <option>Porsche</option>
+            <option>Mazda</option>
+        </select>
+        <br>
+        <p>
+            Выберите страну производитель автомобиля:
+        </p>
+        <select name="country">
+            <option>Germany</option>
+            <option>USA</option>
+            <option>China</option>
+            <option>Italy</option>
+            <option>Japan</option>
+            <option>France</option>
+        </select>
+        <br>
+        <p>
+            Какая цена вам нужна?
+        </p>
+        <input type="number" name="min_buy" placeholder="Минимальная цена">
+        - 
+        <input type="number" name="max_buy" placeholder="Максимальная цена">
+        <br>
+        <p>
+            Какого года выпуска автомобиль вам нужен?
+        </p>
+        <input type="number" name="min_year" placeholder="Минимальный год" minlength="4" maxlength="4">
+        -
+        <input type="number" name="max_year" placeholder="Максимальный год" minlength="4" maxlength="4">
+        <br>
+        <p>
+            Состояние автомобиля:
+        </p>
+        <input type="checkbox" name="broken" id="a">
+        <label for="a">Битая</label>
+        <br>
+        <input type="checkbox" name="credit" id="b">
+        <label for="b">В кредите</label>
+        <br>
+        <input type="checkbox" name="uncleared" id="c">
+        <label for="c">Нерастаможенная</label>
+        <br>
+        <input type="checkbox" name="painted" id="d">
+        <label for="d">Крашенная</label>
+        <br>
+        <input type="checkbox" name="used" id="e">
+        <label for="e">Б/У</label>
+        <br>
+        <p>
+            Выберите тип топлива:
+        </p>
+        <select name="fuel">
+            <option>Бензин</option>
+            <option>Дизель</option>
+            <option>Газ</option>
+            <option>Эелктро</option>
+        </select>
+        <br>
+        <p>
+            Выберите тип коробки передач:
+        </p>
+        <select name="transmission">
+            <option>Механическая</option>
+            <option>Автоматическая</option>
+            <option>Роботизированная</option>
+            <option>Вариативная</option>
+        </select>
+        <br>
+        <p>
+            Выберите цвет автомобиля:
+        </p>
+        <input type="color">
+        <br>
+        <p>
+            Выберите комплектацию автомобиля:
+        </p>
+        <input type="checkbox" name="salon" id="salon">
+        <label for="salon">Кожанный салон</label>
+        <input type="checkbox" name="hatch" id="hatch">
+        <label for="hatch">Люк</label>
+        <input type="checkbox" name="chassis" id="chassis">
+        <label for="chassis">4х ходовая</label>
+        <input type="checkbox" name="suspension" id="suspension">
+        <label for="suspension">улучшенная подвеска</label>
+        <br>
+        <br>
+        <input type="submit" value="Поиск автомобиля">
+    </form>
+</body>
+</html>
