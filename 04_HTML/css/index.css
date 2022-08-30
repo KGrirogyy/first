@@ -1,0 +1,17 @@
+table {
+    border-spacing: 5px;
+    border: 16px solid black;
+    border-radius: 20px;
+}
+
+.first_section {
+    background-color: red;
+}
+
+.second {
+    background-color: blue;
+}
+
+.three {
+    background-color: yellow;
+}
