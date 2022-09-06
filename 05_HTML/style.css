@@ -1,0 +1,36 @@
+.first {
+    font-size: 20px;
+    color: aqua;
+    background-color: brown;
+}
+
+#second {
+    font-size: 20px;
+    color: forestgreen;
+    background-color: blueviolet;
+}
+
+.main li+li {
+    font-size: 20px;
+    color: gold;
+    background-color: teal;
+    padding-left: 30px;
+    border: 3px solid #fff;
+}
+
+.holder > div {
+    font-size: 18px;
+    color: hotpink;
+    background-color: darkolivegreen;
+}
+
+.second a {
+    font-size: 40px;
+    color: aquamarine;
+    background-color: black;
+}
+
+.a a{
+    color: aqua;
+    font-size: 20px;
+}
