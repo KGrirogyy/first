@@ -1,0 +1,53 @@
+#one {
+    color: red;
+    background-color: indigo;
+    border: 2px solid aqua;
+}
+
+.holder p+p {
+    background-color: black;
+    border: 1px solid;
+    font-size: 30px;
+}
+
+.li {
+    background-color: darkcyan;
+    color: fuchsia;
+    border: 2px solid sandybrown;
+}
+
+ul {
+    border: 1px solid ;
+}
+
+.second span > span {
+    color: blue;
+    border: 1px solid white;
+}
+
+table {
+    border: 1px solid white;
+}
+
+table td+td {
+    color: aqua;
+}
+
+#tr {
+    background-color: blueviolet;
+}
+
+.text {
+    border: 1px solid aqua;
+    background-color: brown;
+}
+
+#button {
+    font-size: 20px;
+    background-color: blue;
+}
+
+.a a{
+    color: red;
+    font-size: 20px;
+}
