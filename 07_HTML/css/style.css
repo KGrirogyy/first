@@ -217,18 +217,18 @@ iframe {
     padding: 100px 0;    
 }
 
-.container1 {
-    max-width: 1140px;
-    margin: 0 auto;
-    height: 60px;
-    padding: 0px 15px 8px;
+.icons-main .container {
     font-size: 0;
+    margin-top: 10px;
+    overflow: hidden;
 }
 
 .icon-holder {
     margin-top: -10px;
     width: 19.9%;
     float: left;
+    height: 100px;
+    padding-top: 40px;
 }
 
 .text {
@@ -245,7 +245,6 @@ iframe {
 }
 
 .image {
-    padding-top: 15px;
     vertical-align: middle;
 }
 
