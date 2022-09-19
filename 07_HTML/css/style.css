@@ -217,7 +217,11 @@ iframe {
     padding: 100px 0;    
 }
 
-.icons-main .container {
+.container1 {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 60px;
+    padding: 0px 15px 8px;
     font-size: 0;
 }
 
@@ -241,6 +245,7 @@ iframe {
 }
 
 .image {
+    padding-top: 15px;
     vertical-align: middle;
 }
 
