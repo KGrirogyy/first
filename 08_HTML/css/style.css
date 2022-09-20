@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 15px 8px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main-nav a {
+    font-family: 'Roboto';
+    color: #000000;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26.25px;
+    padding: 0 42px 0 0;
+    text-decoration: none;
+}
+
+#link {
+    color: #34547A;
+}
+
+.main-nav {
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.list>li:hover>a {
+    color: #34547A;
+}
+
+#about::after {
+    content: '\21D3';
+}
+
+.list>li {
+    display: inline-block;
+    position: relative;
+}
+
+.list>li:hover .drop {
+    display: block;
+}
+
+.drop {
+    border: #EEEFF1 solid;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 100%;
+    width: 130px;
+    display: none;
+    padding-left: 5px;
+}
+
+.drop>li:hover>a {
+    color: #34547A;
+}
+
+.drop>li {
+    padding: 10px 0;
+}
+
+#summary>a::before {
+    content: '\21D0';
+}
+
+#summary {
+    position: relative;
+}
+
+#summary:hover .drop2{
+    display: block;
+}
+
+.drop2 {
+    border: #EEEFF1 solid;
+    position: absolute;
+    right: 105%;
+    top: 0;
+    margin-top: -3px;
+    width: 200px;
+    padding-left: 0;
+    display: none;
+}
+
+.drop2>li {
+    padding: 10px 0;
+    padding-left: 5px;
+    margin: 0;
+}
+
+.drop2>li:hover>a {
+    color: #34547A;
+}
+
+.head {
+    background: #EEEFF1;
+    max-width: 1920px;
+    margin: 0 auto -81px;
+}
+
+.design {
+    color: #000;
+    background: #EEEFF1;
+    max-width: 1920px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 78.75px;
+    margin-top: 81px;
+    margin-bottom: 40px;
+    padding-top: 100px;
+}
+
+.first_text {
+    color: #727272;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26.25px;
+    margin-bottom: 65px;
+    max-width: 600px;
+}
+
+.input {
+    position: absolute;
+    width: 225px;
+    height: 65px;
+    background-color: #34547A;
+}
+
+.button {
+    font-family: 'Roboto';
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26.25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+
+.box {
+    color: #000;
+    max-width: 570px;
+    text-align: center;
+    padding-top: 37.5px;
+}
+
+.box h2 {
+    font-family: 'Roboto';
+    font-weight: 500px;
+    font-size: 32px;
+    line-height: 37.5px;
+}
+
+.box p {
+    color: #727272;
+    font-family: 'Roboto';
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 26.25px;
+    padding-top: 26.25px;
+}
+
+.about {
+    background-color: #fff;
+    padding: 70px 0;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.work {
+    background: #EEEFF1;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.mywork {
+    text-align: center;
+    max-width: 570px;
+    padding: 1px 0 20px 0;
+}
+
+.mywork h2 {
+    padding-top: 70px;
+    color: #000;
+    font-family: 'Roboto';
+    text-align: center;
+    height: 30px;
+    font-style: normal;
+    font-weight: 500px;
+    font-size: 32px;
+    line-height: 37.5px;
+}
+
+.mywork p {
+    color: #727272;
+    padding: 50px 0 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.video {
+    width: 1110px;
+    height: 600px;
+}
+
+.contacts {
+    background: #34547A;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.contacts h3 {
+    color: #fff;
+    font-family: 'Roboto';
+    position: absolute;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+}
+.contacts p {
+    color: #fff;
+    font-family: 'Roboto';
+    position: absolute;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+iframe {
+    border: none;
+}
+
+.icons-main{
+    background-color: #34547A;
+    max-width: 1920;
+    padding: 100px 0;    
+}
+
+.icons-main .container {
+    font-size: 0;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.icon-holder {
+    width: 19.9%;
+    float: left;
+}
+
+.text {
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.text span {
+    display: block;
+}
+
+.image {
+    vertical-align: middle;
+}
+
