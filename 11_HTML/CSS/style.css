@@ -9,12 +9,10 @@
 }
 
 body {
-    font-family: 'GraphikLCG-regular', 'GraphikLCG-semibold', sans-serif;
-    font-style: normal;
+    font: 25px/1.25 'GraphikLCG-regular', 'Arial', 'Helvetica',sans-serif;
 }
 
 a {
-    text-decoration: none;
     color: #000000;
 }
 
@@ -23,8 +21,23 @@ li {
 }
 
 .container {
-    max-width: 2200px;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+.button {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #FF6336;
+    border: 1px solid #FF6336;
+    transition: 0.3s linear;
+}
+
+.button a {
+    text-decoration: none;
 }
 
 .head {
@@ -47,18 +60,35 @@ li {
     margin-left: 20px;
 }
 
-.a {
-    
+.nav {
     font-size: 15px;
     margin-left: 60px;
 }
 
-.a a {
-    margin: 0 40px;
+.nav a {
+    text-decoration: none;
+    margin: 0 30px;
+    position: relative;
+    transition: 0.3s linear;
 }
 
-.a a:hover {
+.nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: #FF6336;
+    width: 0;
+    transition: width 0.3s linear;
+}
+
+.nav a:hover {
     color: #FF6336
+}
+
+.nav a:hover:after {
+    width: 100%;
 }
 
 .right {
@@ -67,27 +97,14 @@ li {
 }
 
 .log {
-    font-size: 16px;
-    font-weight: 600;
     padding: 10px 30px;
     color: #000000;
-    border: 1px solid rgba(0, 0, 0, 0.5);
     background: #ffffff;
-    text-align: center;
     margin-right: 10px;
 }
 
 .log:hover {
     background: #FF6336;
-}
-
-.try {
-    font-weight: 600;
-    font-size: 16px;
-    padding: 10px 20px;
-    color: #ffffff;
-    background: #FF6336;
-    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .try:hover {
@@ -104,7 +121,9 @@ li {
 }
 
 .h2 {
+    width: 500px;
     margin-left: 60px;
+    flex-shrink: 0;
 }
 
 .h2 h2 {
@@ -112,7 +131,7 @@ li {
     color: #000000;
     font-size: 65px;
     width: 600px;
-    margin-right: 450px;
+    margin-right: -50px;
 }
 
 .text {
@@ -128,34 +147,24 @@ li {
     margin-bottom: 35px;
 }
 
-.button_try {
-    width: 150px;
-    text-align: center;
+.try2 {
     color: #ffffff;
-    font-weight: 600;
-    font-size: 16px;
     padding: 20px 30px;
     margin-right: 10px;
-    background: #FF6336;
-    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.button_try:hover {
+.try2:hover {
     background: #ffffff;
     color: #000000;
 }
 
-.button_book {
-    font-weight: 600;
-    font-size: 16px;
+.book {
     color: #000000;
-    text-align: center;
     background: #ffffff;
     padding: 20px 30px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.button_book:hover {
+.book:hover {
     color: #ffffff;
     background: #FF6336;
 }
@@ -183,3 +192,56 @@ li {
     justify-content: space-around;
     align-items: center;
 }
+
+.reverse {
+    background: #fcf6df;
+}
+
+.reverse h3 {
+    color: #000000;
+    font-family: 'GraphikLCG-semibold';
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.reverse p {
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.reverse1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.control_text {
+    max-width: 491px;
+}
+
+.start a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.start a:hover {
+    text-decoration: underline;
+}
+
+.reverse2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.shorten_text {
+    max-width: 450px;
+}
+
+.shorten_text p>a:hover {
+    color: #FF6336;
+}
+
