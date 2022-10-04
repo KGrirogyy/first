@@ -9,11 +9,12 @@
 }
 
 body {
-    font: 25px/1.25 'GraphikLCG-regular', 'Arial', 'Helvetica',sans-serif;
+    color: #000000;
+    font: 25px/1.25 'GraphikLCG-regular', 'Roboto', 'Arial', 'Helvetica', sans-serif;
 }
 
 a {
-    color: #000000;
+    color: inherit;
 }
 
 li {
@@ -30,14 +31,15 @@ li {
     font-weight: 600;
     font-size: 16px;
     padding: 10px 20px;
-    color: #ffffff;
     background: #FF6336;
     border: 1px solid #FF6336;
     transition: 0.3s linear;
 }
 
 .button a {
+    color: #ffffff;
     text-decoration: none;
+    transition: 0.3s linear;
 }
 
 .head {
@@ -66,6 +68,7 @@ li {
 }
 
 .nav a {
+    color: #000000;
     text-decoration: none;
     margin: 0 30px;
     position: relative;
@@ -98,18 +101,28 @@ li {
 
 .log {
     padding: 10px 30px;
-    color: #000000;
     background: #ffffff;
     margin-right: 10px;
+}
+
+.log a {
+    color: #000000;
 }
 
 .log:hover {
     background: #FF6336;
 }
 
+.log:hover a{
+    color: #ffffff;
+}
+
 .try:hover {
-    color: #000000;
     background: #ffffff;
+}
+
+.try:hover a {
+    color: #000000;
 }
 
 .main {
@@ -128,14 +141,12 @@ li {
 
 .h2 h2 {
     font-family: 'GraphikLCG-semibold';
-    color: #000000;
     font-size: 65px;
     width: 600px;
     margin-right: -50px;
 }
 
 .text {
-    color: #000000;
     font-size: 25px;
     width: 500px;
     margin-bottom: 50px;
@@ -148,7 +159,6 @@ li {
 }
 
 .try2 {
-    color: #ffffff;
     padding: 20px 30px;
     margin-right: 10px;
 }
@@ -158,19 +168,28 @@ li {
     color: #000000;
 }
 
-.book {
+.try2:hover a {
     color: #000000;
+}
+
+.book {
     background: #ffffff;
     padding: 20px 30px;
 }
 
+.book a {
+    color: #000000;
+}
+
 .book:hover {
-    color: #ffffff;
     background: #FF6336;
 }
 
+.book:hover a {
+    color: #ffffff;
+}
+
 .small_info {
-    color: #000000;
     font-size: 15px;
 }
 
@@ -181,7 +200,6 @@ li {
 
 .brand_h2 {
     font-family: 'GraphikLCG-semibold';
-    color: #000000;
     font-size: 50px;
     text-align: center;
     margin-bottom: 100px;
@@ -195,19 +213,23 @@ li {
 
 .reverse {
     background: #fcf6df;
+    padding-bottom: 150px;
 }
 
 .reverse h3 {
-    color: #000000;
     font-family: 'GraphikLCG-semibold';
     font-size: 50px;
     line-height: 60px;
 }
 
 .reverse p {
-    color: #000000;
     font-size: 20px;
     line-height: 30px;
+}
+
+.reverse a:hover {
+    color: #FF6336;
+    text-decoration: none;
 }
 
 .reverse1 {
@@ -228,6 +250,7 @@ li {
 
 .start a:hover {
     text-decoration: underline;
+    color: #000000;
 }
 
 .reverse2 {
@@ -241,7 +264,394 @@ li {
     max-width: 450px;
 }
 
-.shorten_text p>a:hover {
+.quality_text {
+    max-width: 520px;
+}
+
+.lesswork_text {
+    max-width: 520px;
+}
+
+.localize {
+    background: #fcf6df;
+    padding: 120px 50px;
+}
+.localize h3 {
+    font-family: 'GraphikLCG-semibold';
+    font-size: 50px;
+    text-align: center;
+}
+
+.localize p {
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.localize h4 {
+    font-family: 'GraphikLCG-semibold';
+    font-size: 25px;
+}
+
+.localize a:hover {
+    color: #FF6336;
+    text-decoration: none;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.web {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.web p {
+    max-width: 303px;
+    margin-bottom: 75px;
+}
+
+.docs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.docs p {
+    max-width: 309px;
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile p {
+    max-width: 330px;
+    margin-bottom: 75px;
+}
+
+.marketing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marketing p {
+    max-width: 310px;
+}
+
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.games p {
+    max-width: 281px;
+    margin-bottom: 75px;
+}
+
+.loT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loT p {
+    max-width: 326px;
+}
+
+.learn a {
+    font-size: 20px;
+}
+
+.boost {
+    background: #fcf6df;
+    padding: 120px 75px;
+}
+
+.boost h3 {
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.boost h4 {
+    font-family: 'GraphikLCG-semibold';
+    font-size: 30px;
+}
+
+.boost p {
+    max-width: 409px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.boost a:hover {
+    color: #FF6336;
+    text-decoration: none;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block2 img {
+    padding-bottom: 35px;
+}
+
+.block3 img {
+    padding-bottom: 44px;
+}
+
+.dude {
+    background: #C9E8F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 53px 75px 105px;
+}
+
+.quote p {
+    font-size: 30px;
+    line-height: 40px;
+    max-width: 920px;
+}
+
+#small_name {
+    font-family: 'Roboto';
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #DABC98;
+    padding: 90px 130px 90px 50px;
+}
+
+.cake {
+    display: flex;
+    align-items: center;
+}
+
+.cake h3 {
+    font-weight: 600;
+    font-size: 35px;
+    max-width: 461px;
+    line-height: 50px;
+    margin-left: 60px;
+    margin-right: 100px;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars img {
+    padding-right: 70px;
+}
+
+.integrate {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 165px 0;
+    flex-wrap: wrap;
+}
+
+.integrate h2 {
+    font-family: 'GraphikLCG-semibold';
+    font-size: 65px;
+    text-align: center;
+    padding: 0 325px;
+    line-height: 75px;
+    margin-bottom: -25px;
+}
+
+.integrate p {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 450px;
+}
+
+.integrations {
+    padding: 20px 30px;
+    background: #FF6336;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+.integrations:hover {
+    background: #ffffff;
+}
+
+.integrations:hover a {
+    color: #000000;
+}
+
+.try_free {
+    background: #FF9C7D;
+    display: flex;
+    flex-direction: column;
+    padding: 119px 0 161px;
+    align-items: center;
+}
+
+.try_free h2 {
+    font-family: 'GraphikLCG-semibold';
+    font-size: 65px;
+    text-align: center;
+    line-height: 75px;
+    margin: 0 328px;
+}
+
+.try_free p {
+    font-size: 20px;
+}
+
+.try3 {
+    font-size: 17px;
+    border: 1px solid #000000;
+    background: #000000;
+    padding: 20px 40px;
+    transition: 0.3s linear;
+}
+
+.try3:hover {
+    background: #FF9C7D;
+}
+
+.try3:hover a {
+    color: #000000;
+}
+
+.main_footer {
+    background: #EEEEEE;
+    display: flex;
+    justify-content: space-between;
+    padding: 92px 86px 43px 75px;
+}
+
+.bikes {
+    display: flex;
+    flex-direction: column;
+}
+
+.bikes h3 {
+    font-family: 'GraphikLCG-semibold';
+    font-size: 40px;
+}
+
+.spec-mini {
+    padding-top: 30px;
+    margin-bottom: -17px;
+}
+
+.bikes p {
+    max-width: 290px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.bikes a {
+    text-decoration: none;
+    font-family: 'GraphikLCG-semibold';
+    font-size: 20px;
+}
+
+.bikes a:hover {
+    text-decoration: underline;
+}
+
+.links {
+    display: flex;
+}
+
+.links h4 {
+    font-size: 20px;
+    margin-bottom: -15px;
+    padding-top: 30px;
+}
+
+.links ul {
+    margin-left: -40px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 35px;
+    position: relative;
+    transition: 0.3s linear;
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: #FF6336;
+    width: 0;
+    transition: width 0.3s linear;
+}
+
+.links a:hover {
     color: #FF6336;
 }
 
+.links a:hover::after {
+    width: 100%;
+}
+
+.line {
+    background: #EEEEEE;
+    display: flex;
+}
+
+hr {
+    width: 100%;
+}
+
+.footer_info {
+    padding: 32px 75px 23px;
+    display: flex;
+    background: #EEEEEE;
+    justify-content: space-between;
+}
+
+.footer_left {
+    display: flex;
+    align-items: center;
+}
+
+.footer_left p {
+    max-width: 301px;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_right p {
+    font-size: 12px;
+    margin: 0;
+}
