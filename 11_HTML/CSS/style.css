@@ -1,16 +1,11 @@
 @font-face {
-    font-family: GraphikLCG-regular;
-    src: url(../FONTS/GraphikLCG-Regular.woff);
-}
-
-@font-face {
-    font-family: GraphikLCG-semibold;
-    src: url(../FONTS/GraphikLCG-Semibold.woff);
+    font-family: GraphikLCG;
+    src: url(./stylesheet.css);
 }
 
 body {
     color: #000000;
-    font: 25px/1.25 'GraphikLCG-regular', 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font: 25px/1.25 'GraphikLCG', 'Roboto', 'Arial', 'Helvetica', sans-serif;
 }
 
 a {
@@ -34,6 +29,8 @@ li {
     background: #FF6336;
     border: 1px solid #FF6336;
     transition: 0.3s linear;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .button a {
@@ -43,12 +40,8 @@ li {
 }
 
 .head {
-    background: #ffffff;
     padding: 40px;
     border-bottom: #3d3d3d 1px solid;
-}
-
-.flex_head {
     display: flex;
     justify-content: space-between;
 }
@@ -56,6 +49,7 @@ li {
 .left {
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 .logo {
@@ -96,7 +90,6 @@ li {
 
 .right {
     display: flex;
-    margin-right: 20px;
 }
 
 .log {
@@ -105,7 +98,7 @@ li {
     margin-right: 10px;
 }
 
-.log a {
+.log {
     color: #000000;
 }
 
@@ -113,7 +106,7 @@ li {
     background: #FF6336;
 }
 
-.log:hover a{
+.log:hover {
     color: #ffffff;
 }
 
@@ -121,12 +114,11 @@ li {
     background: #ffffff;
 }
 
-.try:hover a {
+.try:hover {
     color: #000000;
 }
 
 .main {
-    background: #ffffff;
     display: flex;
     align-items: center;
     padding: 80px;
@@ -134,20 +126,17 @@ li {
 }
 
 .h2 {
-    width: 500px;
+    width: 600px;
     margin-left: 60px;
     flex-shrink: 0;
-}
-
-.h2 h2 {
-    font-family: 'GraphikLCG-semibold';
-    font-size: 65px;
-    width: 600px;
     margin-right: -50px;
 }
 
+.h2 h2 {
+    font-size: 65px;
+}
+
 .text {
-    font-size: 25px;
     width: 500px;
     margin-bottom: 50px;
 }
@@ -168,24 +157,17 @@ li {
     color: #000000;
 }
 
-.try2:hover a {
-    color: #000000;
-}
-
 .book {
     background: #ffffff;
     padding: 20px 30px;
 }
 
-.book a {
+.book {
     color: #000000;
 }
 
 .book:hover {
     background: #FF6336;
-}
-
-.book:hover a {
     color: #ffffff;
 }
 
@@ -198,8 +180,7 @@ li {
     background: #FF9C7D;
 }
 
-.brand_h2 {
-    font-family: 'GraphikLCG-semibold';
+.main_brands h2 {
     font-size: 50px;
     text-align: center;
     margin-bottom: 100px;
@@ -212,19 +193,22 @@ li {
 }
 
 .reverse {
-    background: #fcf6df;
+    background: #fff;
     padding-bottom: 150px;
+    padding-top: 90px;
+}
+
+.reverse1:nth-child(even) {
+    flex-direction: row-reverse;
 }
 
 .reverse h3 {
-    font-family: 'GraphikLCG-semibold';
     font-size: 50px;
-    line-height: 60px;
 }
 
 .reverse p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 150%;
 }
 
 .reverse a:hover {
@@ -236,6 +220,7 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 250px;
 }
 
 .control_text {
@@ -251,13 +236,6 @@ li {
 .start a:hover {
     text-decoration: underline;
     color: #000000;
-}
-
-.reverse2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row-reverse;
 }
 
 .shorten_text {
@@ -277,19 +255,19 @@ li {
     padding: 120px 50px;
 }
 .localize h3 {
-    font-family: 'GraphikLCG-semibold';
+    font-family: 'GraphikLCG';
     font-size: 50px;
     text-align: center;
 }
 
 .localize p {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 139%;
     text-align: center;
+    max-width: 330px;
 }
 
 .localize h4 {
-    font-family: 'GraphikLCG-semibold';
     font-size: 25px;
 }
 
@@ -301,7 +279,6 @@ li {
 .columns {
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .web {
@@ -311,60 +288,7 @@ li {
 }
 
 .web p {
-    max-width: 303px;
     margin-bottom: 75px;
-}
-
-.docs {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.docs p {
-    max-width: 309px;
-}
-
-.mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mobile p {
-    max-width: 330px;
-    margin-bottom: 75px;
-}
-
-.marketing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.marketing p {
-    max-width: 310px;
-}
-
-.games {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.games p {
-    max-width: 281px;
-    margin-bottom: 75px;
-}
-
-.loT {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.loT p {
-    max-width: 326px;
 }
 
 .learn a {
@@ -372,7 +296,7 @@ li {
 }
 
 .boost {
-    background: #fcf6df;
+    background: #fff;
     padding: 120px 75px;
 }
 
@@ -380,18 +304,16 @@ li {
     font-weight: 600;
     font-size: 50px;
     text-align: center;
-    line-height: 60px;
 }
 
 .boost h4 {
-    font-family: 'GraphikLCG-semibold';
     font-size: 30px;
 }
 
 .boost p {
     max-width: 409px;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 150%;
 }
 
 .boost a:hover {
@@ -405,12 +327,8 @@ li {
     align-items: center;
 }
 
-.block2 img {
-    padding-bottom: 35px;
-}
-
-.block3 img {
-    padding-bottom: 44px;
+.block1 h4 {
+    margin-top: 0;
 }
 
 .dude {
@@ -420,13 +338,14 @@ li {
     padding: 53px 75px 105px;
 }
 
-.quote p {
+.quote h5 {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 133%;
     max-width: 920px;
+    font-weight: 400;
 }
 
-#small_name {
+.quote p {
     font-family: 'Roboto';
     font-size: 15px;
     margin-bottom: 3px;
@@ -449,7 +368,7 @@ li {
     font-weight: 600;
     font-size: 35px;
     max-width: 461px;
-    line-height: 50px;
+    line-height: 143%;
     margin-left: 60px;
     margin-right: 100px;
 }
@@ -471,22 +390,20 @@ li {
     flex-direction: column;
     padding: 165px 0;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .integrate h2 {
-    font-family: 'GraphikLCG-semibold';
     font-size: 65px;
     text-align: center;
     padding: 0 325px;
-    line-height: 75px;
+    line-height: 115%;
     margin-bottom: -25px;
 }
 
 .integrate p {
-    font-size: 25px;
-    line-height: 30px;
     text-align: center;
-    padding: 0 450px;
+    max-width: 539px;
 }
 
 .integrations {
@@ -500,28 +417,27 @@ li {
     background: #ffffff;
 }
 
-.integrations:hover a {
+.integrations:hover {
     color: #000000;
 }
 
 .try_free {
     background: #FF9C7D;
-    display: flex;
-    flex-direction: column;
     padding: 119px 0 161px;
-    align-items: center;
+    text-align: center;
 }
 
 .try_free h2 {
-    font-family: 'GraphikLCG-semibold';
     font-size: 65px;
     text-align: center;
-    line-height: 75px;
-    margin: 0 328px;
+    line-height: 115%;
+    margin: 0 328px 30px;
+    max-width: 784px;
 }
 
 .try_free p {
     font-size: 20px;
+    margin-bottom: 54px;
 }
 
 .try3 {
@@ -536,7 +452,7 @@ li {
     background: #FF9C7D;
 }
 
-.try3:hover a {
+.try3:hover {
     color: #000000;
 }
 
@@ -553,7 +469,6 @@ li {
 }
 
 .bikes h3 {
-    font-family: 'GraphikLCG-semibold';
     font-size: 40px;
 }
 
@@ -565,12 +480,11 @@ li {
 .bikes p {
     max-width: 290px;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 150%;
 }
 
 .bikes a {
     text-decoration: none;
-    font-family: 'GraphikLCG-semibold';
     font-size: 20px;
 }
 
@@ -586,6 +500,7 @@ li {
     font-size: 20px;
     margin-bottom: -15px;
     padding-top: 30px;
+    margin-top: 0;
 }
 
 .links ul {
@@ -595,7 +510,6 @@ li {
 .links a {
     text-decoration: none;
     font-size: 15px;
-    margin-right: 35px;
     position: relative;
     transition: 0.3s linear;
 }
@@ -617,6 +531,11 @@ li {
 
 .links a:hover::after {
     width: 100%;
+}
+
+.link {
+    max-width: 170px;
+    margin-right: 75px;
 }
 
 .line {
