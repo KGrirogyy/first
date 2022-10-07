@@ -18,6 +18,7 @@ body {
 
 main {
     flex-grow: 1;
+    overflow: hidden;
 }
 
 a {
@@ -177,10 +178,6 @@ a.button {
 .book:hover {
     background: #FF6336;
     color: #ffffff;
-}
-
-.img {
-    min-width: 50%;
 }
 
 .small_info {
