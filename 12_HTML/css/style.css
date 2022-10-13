@@ -140,7 +140,6 @@ a.button {
 }
 
 .nav_opener:checked ~ .nav {
-    transform: translateX(-50px);
     transition: all 1s linear;
 }
 
@@ -347,7 +346,6 @@ a.button {
 .blocks {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .block1 {
@@ -586,6 +584,7 @@ hr {
     display: flex;
     background: #EEEEEE;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer_left {
@@ -705,10 +704,6 @@ hr {
         font-size: 25px;
     }
 
-    .block3 {
-        padding-top: 5px;
-    }
-
     .quote {
         margin-right: 15px;
     }
@@ -742,6 +737,7 @@ hr {
     }
 }
 
+/* width 767px */
 @media (max-width: 767px) {
     .logo {
         margin-right: 20px;
@@ -766,16 +762,14 @@ hr {
         margin: 0;
         display: flex;
         flex-direction: column;
-        width: 130px;
+        width: 100px;
         position: absolute;
-        transform: translateX(540px) translateY(12px);
-        transition: all 1s linear;
+        transform: translateX(500px) translateY(12px);
     }
 
     .nav_opener:checked ~ .nav a{
         background: #FF6336;
         display: block;
-        transform: translateX(540px) translateY(12px);
     }
 
     .nav a {
@@ -838,6 +832,10 @@ hr {
         margin-top: 12px;
     }
 
+    .boost {
+        padding: 120px 30px;
+    }
+
     .boost h4 {
         font-size: 20px;
     }
@@ -872,5 +870,388 @@ hr {
 
     .try_free h2 {
         font-size: 50px;
+    }
+}
+
+/* width 575px */
+@media (max-width: 575px) {
+    .nav_opener:checked ~ .nav a{
+        transform: translateX(-100px) translateY(79px);
+    }
+
+    .main {
+        padding-left: 30px;
+    }
+
+    .first-block {
+        max-width: 320px;
+    }
+
+    .first-block h2 {
+        font-size: 20px;
+    }
+
+    .first-block p {
+        font-size: 15px;
+    }
+
+    .main_brands h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .reverse h3 {
+        font-size: 20px;
+    }
+
+    .reverse1 {
+        margin-bottom: 150px;
+    }
+
+    .localize {
+        padding: 120px 30px;
+    }
+
+    .localize h3 {
+        font-size: 30px;
+    }
+
+    .columns img {
+        width: 50%;
+    }
+
+    .columns h4 {
+        font-size: 15px;
+    }
+
+    .columns p {
+        font-size: 12px;
+    }
+
+    .column1 {
+        padding: 0 5px;
+    }
+
+    .marketing {
+        margin-top: 2px;
+    }
+
+    .boost {
+        padding: 90px 15px;
+    }
+
+    .boost h3 {
+        font-size: 30px;
+    }
+
+    .blocks p {
+        font-size: 12px;
+    }
+
+    .dude {
+        padding: 53px 50px 105px;
+    }
+
+    .dude h5 {
+        font-size: 15px;
+    }
+
+    .rate {
+        padding-right: 90px;
+    }
+
+    .cake h3 {
+        font-size: 15px;
+    }
+
+    .integrate {
+        padding: 100px 0;
+    }
+
+    .integrate h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .integrate p {
+        font-size: 15px;
+    }
+
+    .integrate img {
+        margin-bottom: 10px;
+    }
+
+    .try_free {
+        padding: 100px 0;
+    }
+
+    .try_free h2 {
+        font-size: 30px;
+    }
+
+    .try_free p {
+        font-size: 15px;
+    }
+
+    .main_footer {
+        padding: 92px 30px 43px;
+    }
+
+    .bikes h3 {
+        font-size: 20px;
+    }
+
+    .bikes p {
+        font-size: 10px;
+    }
+
+    .bikes a {
+        font-size: 15px;
+    }
+
+    .links {
+        margin-left: 20px;
+    }
+
+    .link h4 {
+        font-size: 15px;
+    }
+
+    .link a {
+        font-size: 10px;
+    }
+
+    .footer_info {
+        padding: 20px 30px;
+    }
+}
+
+/* width 375px */
+@media (max-width: 375px) {
+    .head .button {
+        padding: 5px;
+        min-width: 80px;
+    }
+
+    .nav_opener:checked ~ .nav a{
+        transform: translateX(-230px) translateY(90px);
+    }
+
+    .main {
+        padding: 50px 10px;
+    }
+
+    .first-block {
+        max-width: 250px;
+    }
+
+    .first-block h2 {
+        font-size: 15px;
+    }
+
+    .first-block p {
+        font-size: 10px;
+    }
+
+    .button.try2 {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .button.book {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .main_brands {
+        padding: 60px 10px;
+    }
+
+    .main_brands h2 {
+        font-size: 20px;
+    }
+
+    .reverse {
+        padding: 80px 10px;
+    }
+
+    .reverse h3 {
+        font-size: 15px;
+    }
+
+    .reverse p {
+        font-size: 12px;
+    }
+
+    .reverse a {
+        font-size: 15px;
+    }
+
+    .reverse1 {
+        margin-bottom: 100px;
+    }
+
+    .control_text {
+        margin: 0 10px;
+    }
+
+    .shorten_text {
+        margin-left: 10px;
+    }
+
+    .quality_text {
+        margin: 0 10px;
+    }
+
+    .lesswork_text {
+        margin-left: 10px;
+    }
+
+
+    .localize {
+        padding: 80px 15px;
+    }
+
+    .columns h4 {
+        font-size: 12px;
+    }
+
+    .columns p {
+        font-size: 10px;
+    }
+
+    .docs {
+        margin-top: 25px;
+    }
+
+    .docs_h4 {
+        margin-top: 7px;
+    }
+
+    .boost {
+        padding: 100px 10px;
+    }
+
+    .boost h3 {
+        font-size: 20px;
+    }
+
+    .boost a {
+        font-size: 15px;
+    }
+
+    .blocks img {
+        width: 70%;
+    }
+
+    .block1, .block2, .block3 {
+        padding: 0 5px;
+    }
+
+    .dude {
+        padding: 50px 15px;
+    }
+
+    .dude h5 {
+        font-size: 12px;
+    }
+
+    .dude p {
+        font-size: 8px;
+    }
+
+    .quote {
+        max-width: 200px;
+    }
+
+    .quote img {
+        width: 30%;
+    }
+
+    .rate {
+        padding: 80px 20px;
+    }
+
+    .cake h3 {
+        font-size: 12px;
+        margin: 0 10px;
+    }
+
+    .stars img {
+        width: 65%;
+    }
+
+    .integrate {
+        padding: 80px 10px;
+    }
+
+    .integrate h2 {
+        font-size: 20px;
+    }
+
+    .integrate p {
+        font-size: 12px;
+    }
+
+    .button.integrations {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .try_free p {
+        margin-bottom: 30px;
+    }
+
+    .button.try3 {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+
+
+    .main_footer {
+        padding: 50px 15px 35px;
+    }
+
+    .bikes h3 {
+        font-size: 15px;
+    }
+
+    .links {
+        margin-left: 15px;
+    }
+
+    .link {
+        margin-right: 12px;
+        line-height: 5px;
+    }
+
+    .link li {
+        margin-bottom: 10px;
+    }
+
+    .links h4 {
+        font-size: 10px;
+    }
+
+    .links a {
+        font-size: 8px;
+    }
+
+    .footer_info {
+        padding: 20px 15px;
+    }
+
+    .footer_left img {
+        width: 30%;
+    }
+
+    .footer_left p {
+        font-size: 8px;
+        margin: 8px 0 8px 10px;
+    }
+
+    .footer_right p {
+        font-size: 5px;
     }
 }
