@@ -616,33 +616,40 @@ hr {
     transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
       stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   .line1 {
     stroke-dasharray: 60 207;
     stroke-width: 6;
   }
+
   .line2 {
     stroke-dasharray: 60 60;
     stroke-width: 6;
   }
+
   .line3 {
     stroke-dasharray: 60 207;
     stroke-width: 6;
   }
+
   .nav_opener:checked + .menu .line1 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
+
   .nav_opener:checked + .menu .line2 {
     stroke-dasharray: 1 60;
     stroke-dashoffset: -30;
     stroke-width: 6;
   }
+
   .nav_opener:checked + .menu .line3 {
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
+
   #checkbox {
     display: none;
   }
@@ -1207,8 +1214,6 @@ hr {
         font-size: 12px;
     }
 
-
-
     .main_footer {
         padding: 50px 15px 35px;
     }
@@ -1253,5 +1258,24 @@ hr {
 
     .footer_right p {
         font-size: 5px;
+    }
+}
+
+/* width 320px */
+@media (max-width: 320px) {
+    .head {
+        padding: 40px 30px 40px 0;
+    }
+
+    .menu svg {
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav_opener:checked ~ .nav a{
+        transform: translateX(-280px) translateY(90px);
     }
 }
