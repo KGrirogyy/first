@@ -1,3 +1,14 @@
+@media (min-width: 650px) {
+	.footer .column {
+		width: 100%;
+		max-width: 50%;
+	}
+
+	.footer-form {
+		max-width: 40%;
+	}
+}
+
 @media (min-width: 992px) {
 	.burger {
 		display: none;
@@ -14,5 +25,14 @@
 	
 	.header .navigation a {
 		text-decoration: none;
+	}
+
+	.footer .column {
+		width: initial;
+		max-width: 20%;
+	}
+
+	.footer .copy {
+		margin-bottom: 0;
 	}
 }
