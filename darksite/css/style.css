@@ -1,6 +1,9 @@
 @import url(./global.css);
 
 /* ----ATOMIC---------------- */
+.scroll-off{
+	overflow-y: hidden;
+}
 .hidden {
 	display: none;
 }
@@ -85,7 +88,7 @@
 }
 
 .header .navigation .btn {
-	margin-top: auto;
+	margin-top: 20%;
 }
 
 .burger {
