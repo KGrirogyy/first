@@ -27,6 +27,10 @@
 		text-decoration: none;
 	}
 
+	.header .navigation .btn {
+		margin-top: auto;
+	}
+
 	.footer .column {
 		width: initial;
 		max-width: 20%;
