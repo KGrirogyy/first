@@ -2,244 +2,355 @@
 
 /* ----ATOMIC---------------- */
 .hidden {
-	display: none;
+  display: none;
 }
 .flex {
-	display: flex;
+  display: flex;
 }
 .flex-wrap {
-	flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .items-center {
-	align-items: center;
+  align-items: center;
 }
 .justify-center {
-	justify-content: center;
+  justify-content: center;
 }
 .justify-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
+}
+.text_center {
+  text-align: center;
+}
+.color-white {
+  color: #fff;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.spacing2 {
+  letter-spacing: 2px;
 }
 
 /* ----COMPONENTS------------ */
 .container {
-	width: 100%;
-	max-width: calc(1168px + 2rem);
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin-left: auto;
-	margin-right: auto;
+  width: 100%;
+  max-width: calc(1168px + 2rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .btn {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.25;
-	letter-spacing: 0.4px;
-	border-radius: 14px;
-	padding: 9px 20px 13px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+  border-radius: 14px;
+  padding: 9px 20px 13px 20px;
 }
 .btn-default {
-	color: #000000;
-	background-color: #ffffff;
-	text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
 }
 .btn-animate {
-
 }
 
 /* ----HEAD------------------ */
 .header {
-	padding-top: 24px;
-	padding-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header .wrapper {
-	gap: 30px;
+  gap: 30px;
 }
 
 .header .logo {
-	position: relative;
-	z-index: 5;
+  position: relative;
+  z-index: 5;
 }
 
 .header .navigation {
-	display: none;
-	flex-direction: column;
-	gap: 30px;
-	flex-grow: 1;
-	align-items: flex-end;
-	position: fixed;
-	inset: 0;
-	padding: 98px 1rem 2rem 1rem;
-	background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  flex-grow: 1;
+  z-index: 2;
+  align-items: flex-end;
+  position: fixed;
+  inset: 0;
+  padding: 98px 1rem 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .header .navigation a {
-	text-decoration: underline;
+  text-decoration: underline;
+  transition: all 0.2s linear;
+}
+
+.header .navigation a:hover {
+  color: #fff;
 }
 
 .header .navigation.active {
-	display: flex;
+  display: flex;
 }
 
 .header .navigation .btn {
-	margin-top: auto;
+  margin-top: auto;
+  transition: all 0.2s linear;
+}
+
+.header .navigation .btn:hover {
+  background-color: #c0c0c0;
 }
 
 .burger {
-	z-index: 5;
-	width: 50px;
-	height: 50px;
-	position: relative;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  position: relative;
 }
 .burger span {
-	display: block;
-	width: 40px;
-	height: 2px;
-	background-color: #ffffff;
-	position: absolute;
-	left: 5px;
-	transition: all 0.2s linear;
-	opacity: 1;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 5px;
+  transition: all 0.2s linear;
+  opacity: 1;
 }
-.burger span:first-child{
-	top: 9px;
+.burger span:first-child {
+  top: 9px;
 }
 .burger span:nth-child(2),
-.burger span:nth-child(3){
-	top: 24px;
+.burger span:nth-child(3) {
+  top: 24px;
 }
-.burger span:last-child{
-	top: 41px;
+.burger span:last-child {
+  top: 41px;
 }
 
-.burger.open span:first-child{
-	top: -10px;
-	opacity: 0;
+.burger.open span:first-child {
+  top: -10px;
+  opacity: 0;
 }
-.burger.open span:nth-child(2){
-	transform: rotate(45deg);
+.burger.open span:nth-child(2) {
+  transform: rotate(45deg);
 }
-.burger.open span:nth-child(3){
-	transform: rotate(-45deg);
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
 }
-.burger.open span:last-child{
-	top: 60px;
-	opacity: 0;
+.burger.open span:last-child {
+  top: 60px;
+  opacity: 0;
 }
+
 /* ----BANNER---------------- */
+.main-banner {
+  min-height: 500px;
+  background: url("../images/aperture.jpg") no-repeat center/cover;
+  align-items: center;
+  padding-bottom: 70px;
+}
+
+.main-title {
+  font-size: 54px;
+  padding-bottom: 1rem;
+}
+
+.main-banner .description {
+  max-width: 580px;
+}
+
+/* ----WHAT WE DO------------ */
+.what-we-do {
+  display: flex;
+  flex-direction: row;
+  padding-top: 112px;
+  padding-bottom: 100px;
+}
+
+.what-title {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.under-title {
+  font-size: 23px;
+}
+
+.what-we-do h3 {
+  color: #ffffff;
+}
+
+.what-padding {
+  padding: 0 30px;
+}
+
+.what-we-do .description {
+  padding-top: 15px;
+  padding-bottom: 42px;
+}
+
+.what-first {
+  gap: 16px;
+  text-align: left;
+}
+
+.product {
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url(../images/product.jpg) no-repeat left/cover;
+  min-height: 600px;
+  max-width: 576px;
+}
+
+.architecture {
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url(../images/Architecture.jpg) no-repeat right/cover;
+  min-height: 600px;
+  max-width: 576px;
+}
+
+.what-second {
+  padding-top: 16px;
+  gap: 16px;
+  text-align: left;
+}
+
+.dron {
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url(../images/drone.jpg) no-repeat left/cover;
+  min-height: 600px;
+  max-width: 576px;
+}
+
+.wild {
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url(../images/wildlife.jpg) no-repeat left/cover;
+  min-height: 600px;
+  max-width: 576px;
+}
+
+/* ----MOUNT----------------- */
 
 /* ----FOOTER---------------- */
 .footer .up {
-	padding-top: 100px;
-	padding-bottom: 36px;
+  padding-top: 100px;
+  padding-bottom: 36px;
 }
 
 .footer .center {
-	border-top: 2px solid #fff;
-	border-bottom: 2px solid #fff;
-	padding-top: 36px;
-	padding-bottom: 36px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .footer .down {
-	padding-top: 56px;
-	padding-bottom: 100px;
+  padding-top: 56px;
+  padding-bottom: 100px;
 }
 
 .footer .logo {
-	margin-bottom: 20px;
-}
-
-.footer .title {
-	letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
 .footer .link {
-	display: inline-block;
-	margin-top: 10px;
-	color: #fff;
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
 }
 
 .footer .column {
-	flex-grow: 1;
-	max-width: 20%;
+  padding-bottom: 15px;
+  flex-grow: 1;
+  max-width: 20%;
 }
 
 .footer .column:first-child {
-	max-width: initial;
+  max-width: initial;
 }
 
 .footer .copy {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 .footer .social {
-	gap: 20px;
+  gap: 20px;
 }
 
 .twitter:hover svg * {
-	fill: #1c9aef;
+  fill: #1c9aef;
 }
 
 .instagram:hover svg * {
-	fill: #fa8f21;
+  fill: #fa8f21;
 }
 
 .facebook:hover svg * {
-	fill: #1877f2;
+  fill: #1877f2;
 }
 
 .footer .description {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .footer .wrap {
-	flex-grow: 1;
+  flex-grow: 1;
 }
 
 .footer-form {
-	z-index: 1;
-	width: 100%;
-	max-width: 40%;
-	background-color: #f9fafb;
-	border: 1px solid #e5e7eb;
-	border-radius: 12px;
-	overflow: hidden;
-	position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 40%;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
 }
 
 .footer-form label {
-	width: 100%;
+  width: 100%;
 }
 
 .footer-form .email {
-	background-color: inherit;
-	border: none;
-	width: 100%;
-	padding: 15px 10px;
-	font-size: 18px;
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 18px;
 }
 
 .footer-form .email:focus {
-	outline: none;
-	border: none;
+  outline: none;
+  border: none;
 }
 
 .footer-form .button {
-	position: absolute;
-	right: 0.2rem;
-	top: 0.5rem;
-	background-color: #000000;
-	color: #000000;
-	border-radius: 11px;
-	transition: all 0.2s linear;
-	font-size: 16px;
-	padding: 5px 11px;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.5rem;
+  background-color: #000000;
+  color: #000000;
+  border-radius: 11px;
+  transition: all 0.2s linear;
+  font-size: 16px;
+  padding: 5px 11px;
 }
 
 .footer-form:hover .button {
-	color: #ffffff;
+  color: #ffffff;
 }

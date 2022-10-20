@@ -1,18 +1,25 @@
 @media (min-width: 992px) {
-	.burger {
-		display: none;
-	}
-	.header .navigation {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-end;
-		align-items: center;
-		position: static;
-		padding: 0;
-		background-color: transparent;
-	}
-	
-	.header .navigation a {
-		text-decoration: none;
-	}
+  .burger {
+    display: none;
+  }
+  .header .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: static;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .header .navigation a {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 650px) {
+  .main-banner {
+    min-height: 716px;
+    align-items: flex-end;
+  }
 }
