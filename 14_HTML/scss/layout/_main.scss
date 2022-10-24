@@ -1,0 +1,28 @@
+.main_block {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background: $white-color url(/Homeworks/14_HTML/images/big_picture.jpg)
+    no-repeat center/cover;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    text-transform: uppercase;
+    font-size: 72px;
+    line-height: 86px;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+  }
+  .description {
+    display: inline-block;
+    max-width: 460px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+}

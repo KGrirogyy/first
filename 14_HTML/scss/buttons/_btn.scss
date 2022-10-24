@@ -1,0 +1,28 @@
+.btn-default {
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  color: $white-color;
+  background: transparent;
+  border: 1px solid $white-color;
+  border-radius: 6px;
+  padding: 12px 30px;
+  transition: all 0.2s linear;
+  &:hover {
+    color: #ed4c5c;
+    background-color: #fff;
+  }
+}
+
+.main_block {
+  .btn-default {
+    font-weight: 600;
+    color: #ed4c5c;
+    background-color: #fff;
+    padding: 17px 53px;
+    &:hover {
+      color: $white-color;
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.main-head {
+  margin: 33px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  &-text {
+    margin-left: 7px;
+    color: $white-color;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+}
+.nav {
+  display: none;
+  gap: 30px;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  padding: 98px 1rem 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  line-height: 17px;
+  a {
+    color: $white-color;
+    transition: all 0.2s linear;
+    &:hover {
+      transform: translateY(-5px) translateX(5px);
+      color: #000;
+    }
+  }
+  & :first-child {
+    font-weight: 700;
+  }
+  &.active {
+    display: flex;
+  }
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.burger span {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: $white-color;
+  position: absolute;
+  left: 5px;
+  transition: all 0.2s linear;
+  opacity: 1;
+}
+
+.burger {
+  & span:first-child {
+    top: 9px;
+  }
+  & span:nth-child(2) {
+    top: 24px;
+  }
+  & span:nth-child(3) {
+    top: 24px;
+  }
+  & span:last-child {
+    top: 41px;
+  }
+
+  &.open span:first-child {
+    top: -10px;
+    opacity: 0;
+  }
+  &.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  &.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  &.open span:last-child {
+    top: 60px;
+    opacity: 0;
+  }
+}

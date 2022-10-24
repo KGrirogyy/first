@@ -1,0 +1,34 @@
+body {
+  background: #000;
+  height: 100%;
+  color: $white-color;
+  font: 12px/1.5 "Lato", "Arial", "Helvetica", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(1110px + 2rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: unset;
+  border: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
