@@ -14,15 +14,27 @@
   }
 }
 
+.header {
+  .btn-default {
+    padding: 10px 20px;
+    @media (min-width: 360px) {
+      padding: 12px 30px;
+    }
+  }
+}
+
 .main_block {
   .btn-default {
     font-weight: 600;
     color: #ed4c5c;
     background-color: #fff;
-    padding: 17px 53px;
+    padding: 14px 40px;
     &:hover {
       color: $white-color;
       background-color: transparent;
+    }
+    @media (min-width: 405px) {
+      padding: 17px 53px;
     }
   }
 }

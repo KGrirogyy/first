@@ -1,0 +1,35 @@
+.footer {
+  background-color: #fafafa;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @media (min-width: 690px) {
+    padding-top: 86px;
+    padding-bottom: 86px;
+  }
+  .container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    @media (min-width: 690px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &_block {
+    max-width: 200px;
+    .title {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 33px;
+    }
+    .tel {
+      padding-top: 10px;
+    }
+  }
+  .description {
+    margin-top: 80px;
+    @media (min-width: 690px) {
+      margin-top: 140px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.social-icons {
+  display: flex;
+  margin-top: 20px;
+  font-size: 15px;
+  li {
+    margin-right: 15px;
+  }
+  a {
+    color: $black-color;
+  }
+  .icon-facebook:hover::before {
+    color: #00f;
+  }
+  .icon-linkedin:hover::before {
+    color: #0077b7;
+  }
+  .icon-twitter:hover::before {
+    color: #1d9bf0;
+  }
+}

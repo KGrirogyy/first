@@ -1,7 +1,7 @@
 body {
-  background: #000;
+  background: #fff;
   height: 100%;
-  color: $white-color;
+  color: $black-color;
   font: 12px/1.5 "Lato", "Arial", "Helvetica", sans-serif;
 }
 
@@ -31,4 +31,8 @@ a {
 img {
   max-width: 100%;
   object-fit: contain;
+}
+
+ul {
+  list-style-type: none;
 }
