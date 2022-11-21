@@ -1,0 +1,74 @@
+body {
+  font: 16px/1.6 "Montserrat", "Arials", "Helvetica", sans-serif;
+}
+
+a {
+  color: $active-regular;
+  text-decoration: none;
+  &:hover {
+    color: $accent;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 30px;
+  @media (min-width: 768px) {
+    padding: 0 60px;
+  }
+  @media (min-width: 1920px) {
+    padding: 0 160px;
+  }
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 37px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 27px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+// p {
+//   line-height: 26px;
+// }
+
+.link {
+  position: relative;
+  @include h_caps;
+  &::after {
+    content: "";
+    right: -9px;
+    top: 5px;
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 7px;
+    border: solid $active-regular;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+  }
+  &:hover::after {
+    border: solid $accent;
+    border-width: 0 2px 2px 0;
+  }
+}

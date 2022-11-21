@@ -1,0 +1,110 @@
+.footer {
+  padding-bottom: 30px;
+  background-color: $gray-bg;
+  text-align: center;
+  line-height: 20px;
+  .container {
+    position: relative;
+    .footer-info {
+      padding-top: 30px;
+      border-top: 2px solid $gray-separator;
+      .last-element {
+        color: $gray-text;
+        @media (min-width: 768px) {
+          position: absolute;
+          right: 60px;
+          top: 30%;
+        }
+        @media (min-width: 1920px) {
+          right: 160px;
+        }
+      }
+    }
+  }
+  &-main {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-place {
+    margin-bottom: 20px;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+    &_name {
+      color: $main-color;
+      margin-bottom: 10px;
+      @media (min-width: 768px) {
+        margin: 0;
+      }
+    }
+    .map {
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 700;
+      position: relative;
+      @media (min-width: 768px) {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          background: $gray-text;
+          border-radius: 50%;
+          left: -15px;
+          top: 30%;
+        }
+      }
+    }
+  }
+  .links {
+    margin-bottom: 30px;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      gap: 26px;
+    }
+    .icon-facebook {
+      font-size: 38px;
+    }
+    .phone {
+      position: relative;
+      margin: 10px 0;
+      font-size: 16px;
+      @media (min-width: 768px) {
+        margin: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          background: $gray-text;
+          border-radius: 50%;
+          left: -15px;
+          top: 30%;
+        }
+      }
+    }
+    .email {
+      position: relative;
+      font-weight: 700;
+      @media (min-width: 768px) {
+        &::before {
+          content: "";
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          background: $gray-text;
+          border-radius: 50%;
+          left: -15px;
+          top: 30%;
+        }
+      }
+    }
+  }
+}

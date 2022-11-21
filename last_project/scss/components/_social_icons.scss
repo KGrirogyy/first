@@ -1,0 +1,32 @@
+.header_info {
+  .social {
+    display: none;
+    margin-left: 18px;
+    max-height: 25px;
+    @media (min-width: 768px) {
+      display: block;
+      padding-top: 4px;
+    }
+    a.icon-facebook {
+      padding: 0;
+      font-size: 24px;
+      font-weight: 400;
+      position: relative;
+      &:hover {
+        color: $accent;
+        background: transparent;
+      }
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background-color: $gray-separator;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      left: -11px;
+      top: 10px;
+    }
+  }
+}
